@@ -33,7 +33,7 @@ let productList = [
         "productId": "1152746",
         "purity": ".9999",
         "manufacturer": "Valcambi",
-        "productURL": "https:\/\/www.jmbullion.com\/1-kilo-valcambi-cast-gold-bar\/",
+        "productURL": "https://www.jmbullion.com/1-kilo-valcambi-cast-gold-bar/",
         "supplierCountry": "USA",
         "weight": "1000 G"
        },

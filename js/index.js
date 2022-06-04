@@ -1,12 +1,27 @@
 import { getColumnList, getProductsList } from "./data.js";
 
+//place the navbar
+const navBar =document.querySelector('.navbar');
+fetch('../common/navbar.html')
+.then(res => res.text())
+.then(data => {
+  navBar.innerHTML= data
+})
+
+//place the footer
+const footer =document.querySelector('.footer');
+fetch('../common/footer.html')
+.then(res => res.text())
+.then(data => {
+  footer.innerHTML= data
+})
+
 //get the product list
 const productList = getProductsList();
 console.log(productList);
 //get the column list
 const columnList = getColumnList();
-//get the table
-let table = document.getElementById("landingPageTable");
+
 
 //column list
 let tableHeader = document.getElementById("tableHeader");
@@ -33,4 +48,4 @@ for (var i = 0; i < productList.length; i++) {
   </tr>`;
 }
 console.log('DATA',data);
-tableBody.innerHTML = data
+tableBody.innerHTML = data;
